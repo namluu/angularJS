@@ -12,6 +12,7 @@
 <body>
 	<div ng-controller="TodoCtrl">
 		<h2>{{getTotalTodos()}}</h2>
+		<p><a href="" ng-click="archive()">Archive</a></p>
 		<ul class="list-unstyled">
 			<li ng-repeat="todo in todos">
 				<input type="checkbox" ng-model="todo.done">
